@@ -8,16 +8,20 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <!-- HEADER -->
       <div class="header">
-        <div class="search-container"><img src="" alt="icon"><input type="search" /></div>
-        
+        <label class="search-container" for="search">
+          <i class="material-icons">search</i>
+          <input type="search" id="search"placeholder="Search..."/>
+        </label>    
         <div class="profile-container">
-          <img src="" alt="notification" />
+          <i class="material-icons">notifications</i>
           <img src="./FVsra-zWAAE8JgI.png" alt="avatar" class="avatar"/>
           <h3 class="user-name">Koiwai Yotsuba</h3>
         </div>
@@ -39,19 +43,38 @@
 
       <!-- SIDEBAR -->
       <div class="sidebar">
-        <div class="logo"><h1>Logo</h1></div>
+        <div class="logo"><h1>Dashboard</h1></div>
         <ul class="first-menu">
-          <li class="home">Home</li>
-          <li class="profile">Profile</li>
-          <li class="messages">Messages</li>
-          <li class="history">History</li>
-          <li class="tasks">Tasks</li>
-          <li class="communities">Communities</li>
+          <li>
+            <i class="material-icons" id="home">home</i>
+            <label for="home">Home</label>
+          </li>
+          <li><i class="material-icons">account_circle</i>
+            Profile
+          </li>
+          <li><i class="material-icons">chat</i>
+            Messages
+          </li>
+          <li><i class="material-icons">history</i>
+            History
+          </li>
+          <li><i class="material-icons">task</i> 
+            Tasks
+        </li>
+          <li><i class="material-icons">groups</i>
+           Communities
+          </li>
         </ul>
           <ul class="second-menu">
-          <li class="settings">Settings</li>
-          <li class="support">Support</li>
-          <li class="privacy">Privacy</li>
+          <li><i class="material-icons">settings</i>
+            Settings
+          </li>
+          <li><i class="material-icons">support_agent</i>
+            Support
+          </li>
+          <li><i class="material-icons">shield</i> 
+            Privacy
+          </li>
         </ul>
       </div>
 
@@ -64,16 +87,25 @@
             <p class="title">Yotsuba & Moving</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              dignissimos porro doloremque quae minu
+              dignissimos porro doloremque quae minuasdfsadf asdf asdgsagdasdas dasd
             </p>
+            <div class="icons">
+            <i class="material-icons">favorite</i>
+            <i class="material-icons">visibility</i>
+            <i class="material-icons">share</i>
+          </div>
           </div>
           <div class="card">
             <p class="title">Yotsuba & Drawing</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              dignissimos porro doloremque quae minus ullam voluptatibus am
-              
+              dignissimos porro doloremque quae minus ullam voluptatibus am asdhasdgasdf sadfs 
             </p>
+            <div class="icons">
+              <i class="material-icons">favorite</i>
+              <i class="material-icons">visibility</i>
+              <i class="material-icons">share</i>
+            </div>
           </div>
           <div class="card">
             <p class="title">Yotsuba & Revenge</p>
@@ -82,6 +114,11 @@
               dignissimos porro doloremque quae minus ullam voluptatibus amet ex
               esse vitae!
             </p>
+            <div class="icons">
+              <i class="material-icons">favorite</i>
+              <i class="material-icons">visibility</i>
+              <i class="material-icons">share</i>
+            </div>
           </div>
           <div class="card">
             <p class="title">Yotsuba & Asagi</p>
@@ -90,6 +127,11 @@
               dignissimos porro doloremque quae minus ullam voluptatibus amet ex
               esse vitae!
             </p>
+            <div class="icons">
+              <i class="material-icons">favorite</i>
+              <i class="material-icons">visibility</i>
+              <i class="material-icons">share</i>
+            </div>
           </div>
           <div class="card">
             <p class="title">Yotsuba & Elephant</p>
@@ -98,6 +140,11 @@
               dignissimos porro doloremque quae minus ullam voluptatibus amet ex
               esse vitae!
             </p>
+            <div class="icons">
+              <i class="material-icons">favorite</i>
+              <i class="material-icons">visibility</i>
+              <i class="material-icons">share</i>
+            </div>
           </div>
           <div class="card">
             <p class="title">Yotsuba & Newspapers</p>
@@ -106,6 +153,11 @@
               dignissimos porro doloremque quae minus ullam voluptatibus amet ex
               esse vitae!
             </p>
+            <div class="icons">
+              <i class="material-icons">favorite</i>
+              <i class="material-icons">visibility</i>
+              <i class="material-icons">share</i>
+            </div>
           </div>
         </div>
       </div>
@@ -117,7 +169,7 @@
               <div class="announcement">
                 <h4>Site Maintenance</h4>
                 <p>
-                Lorem ipsum dolor sit amet, consec tetur adip isici ng elit. Er
+                Lorem ipsum dolor sit amet, consec tetur adip isici ng elit
                 </p>
               </div>
               <div class="announcement">
@@ -137,33 +189,34 @@
           <div class="trending-container">
             <h2>Trending Now</h2>
             <div class="trends">
-            <div class="trend">
-                <img src="" alt="avatar">
+              <div class="trend">
+                <img src="./asagi.png" alt="avatar">
                   <div class="trend-text">
                     <h3 class="trend-name">Asagi</h3>
-                    <p>The eldest</p>
+                    <p>The Eldest</p>
                   </div>
-            </div>
-            <div class="trend">
-                <img src="" alt="avatar">
-                  <div class="trend-text">
-                    <h3 class="trend-name">Fuuka</h3>
-                    <p>The middle child</p>
+              </div>
+              <div class="trend">
+                  <img src="./fuuka.jpg" alt="avatar">
+                    <div class="trend-text">
+                      <h3 class="trend-name">Fuuka</h3>
+                      <p>The Middle Child</p>
                     </div>
-            </div>
-            <div class="trend">
-                <img src="" alt="avatar">
-                <div class="trend-text">
-                  <h3 class="trend-name">Ena</h3>
-                  <p>The youngest</p>
+              </div>
+              <div class="trend">
+                  <img src="./ena.jpg" alt="avatar">
+                    <div class="trend-text">
+                      <h3 class="trend-name">Ena</h3>
+                      <p>The Youngest</p>
+                    </div>
+              </div>
+              <div class="trend">
+                <img src="./yanda.png" alt="avatar">
+                  <div class="trend-text">
+                    <h3 class="trend-name">Yanda</h3>
+                    <p>idiot</p>
                   </div>
             </div>
-            <div class="trend">
-                <img src="" alt="avatar">
-                <div class="trend-text">
-                  <h3 class="trend-name">Fuuka</h3>
-                  <p>idiot</p>
-                  </div>
             </div>
             </div>
           </div>
